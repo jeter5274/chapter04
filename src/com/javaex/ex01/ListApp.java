@@ -32,7 +32,21 @@ public class ListApp {
 		System.out.println(cList.size());
 		
 		
-		//삼각형 관리 - 메소드 작명 내맘대로 하기
+		//삼각형 관리
+		TriList tList = new TriList();
+		Triangle t01 = new Triangle(10,5);
+		Triangle t02 = new Triangle(30,28);
+		Triangle t03= new Triangle(5,1);
+		
+		tList.add(t01);
+		tList.add(t02);
+		tList.add(t03);
+		
+		Triangle t100 = tList.get(0);
+		t100.draw();
+		
+		System.out.println(tList.size());
+		/*메소드 작명 내맘대로 하기
 		TriList tList = new TriList();
 		Triangle t01 = new Triangle(10,5);
 		Triangle t02 = new Triangle(30,28);
@@ -46,7 +60,7 @@ public class ListApp {
 		t100.draw();
 		
 		System.out.println(tList.length());
-		
+		*/
 	}
 
 }

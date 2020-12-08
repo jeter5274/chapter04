@@ -13,6 +13,20 @@ public class TriList {
 	}
 	
 	//메소드 일반 (getter/setter 생략)
+	public void add(Triangle t) {
+		tArray[index] = t;
+		index++;
+	}
+	
+	public Triangle get(int index) {
+		return tArray[index];
+	}
+	
+	public int size() {
+		return index;
+	}
+	
+	/*메소드 작명 내맘대로 하기
 	public void input(Triangle t) {
 		tArray[index] = t;
 		index++;
@@ -25,6 +39,6 @@ public class TriList {
 	public int length() {
 		return index;
 	}
-	
+	*/
 }
 
