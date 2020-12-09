@@ -2,6 +2,7 @@ package com.javaex.ex04;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class ListApp {
 
@@ -10,7 +11,10 @@ public class ListApp {
 		//ArrayList사용 + Ractangle
 		
 		//ArrayList<Ractangle> rList = new ArrayList<Ractangle>();
-		LinkedList<Ractangle> rList = new LinkedList<Ractangle>();
+		//LinkedList<Ractangle> rList = new LinkedList<Ractangle>();
+		
+		//ArrayList ↔ LinkedList 변환이 가능하도록 List인터페이스를 통해 공통메소드만 사용하도록함
+		List<Ractangle> rList = new LinkedList<Ractangle>();
 		
 		Ractangle r01 = new Ractangle(3,3);
 		Ractangle r02 = new Ractangle(4,4);
@@ -43,6 +47,9 @@ public class ListApp {
 			rList.get(i).draw();
 		}
 		
+		System.out.println("toString=========================");
+		System.out.println(rList.toString());
+		
 		System.out.println("remove=========================");
 
 		//삭제 remove()
@@ -59,6 +66,9 @@ public class ListApp {
 		for(int i=0;i<rList.size();i++) {
 			rList.get(i).draw();
 		}
+		
+		
+
 		
 		//////////////////////////////////////////////////////////////
 		//Circle
